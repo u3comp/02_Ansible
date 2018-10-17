@@ -1,7 +1,8 @@
 - name: Add Feature
   hosts: all
-  
+
   gather_facts: false
+
   tasks:
     - name: Add Feature
       win_Feature:
