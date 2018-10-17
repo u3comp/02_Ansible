@@ -1,0 +1,9 @@
+
+
+  hosts: all
+
+- name: update
+  win_updates: category_names=Updates state=searched
+
+- name: reboot
+  win_reboot:
