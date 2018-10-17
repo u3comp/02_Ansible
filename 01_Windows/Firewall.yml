@@ -1,0 +1,12 @@
+--
+# Firewall Control
+
+- name: Windows Feature
+  hosts: all
+  
+  gather_facts: true
+  tasks:
+    - name: Disable Private firewall
+      win_firewall:
+        state: enable
+        profiles: public
