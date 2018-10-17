@@ -10,5 +10,4 @@
         name: ansible
         password: "Password1"
         groups: ["Users"]
-        
-state: present
+        state: present
