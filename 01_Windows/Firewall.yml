@@ -1,12 +1,17 @@
 --
 # Firewall Control
 
-- name: Disable Private firewall
+- name: Enable firewall for Domain, Public and Private profiles
   hosts: all
-  
-  gather_facts: true
+
+  gather_facts: false
+
   tasks:
-    - name: Disable Private firewall
+    - name: Enable firewall for Domain, Public and Private profiles
       win_firewall:
-        state: enable
-        profiles: public
+        state: enabled
+        profiles:
+        - Domain
+        - Private
+        - Public
+      tags: enable_firewall
