@@ -1,0 +1,7 @@
+- name: Set Timezone
+  hosts: all
+  gather_facts: false
+  tasks:
+ 	- name: Set Timezone
+  	win_timezone:
+    	timezone: Tokyo Standard Time

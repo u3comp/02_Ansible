@@ -1,7 +1,7 @@
 --
 # Firewall Control
 
-- name: Windows Feature
+- name: Disable Private firewall
   hosts: all
   
   gather_facts: true
